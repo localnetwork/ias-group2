@@ -21,7 +21,7 @@ export default function HomeTopics() {
           start: "top bottom", // Start animation when the top of the rocket enters the bottom of the viewport
           end: "top top", // End animation when the top of the rocket reaches the top of the viewport
           scrub: true, // Smooth animation based on scroll position
-          markers: true, // Debug markers to visualize the start and end points
+          // markers: true, // Debug markers to visualize the start and end points
           toggleActions: "play none none none", // Controls the animation behavior
         },
       }
@@ -40,7 +40,7 @@ export default function HomeTopics() {
             start: "top bottom", // Start animation when the top of the box enters the bottom of the viewport
             end: "top top", // End animation when the top of the box reaches the top of the viewport
             scrub: true, // Smooth animation based on scroll position
-            markers: true, // Debug markers
+            // markers: true, // Debug markers
             toggleActions: "play none none none", // Controls the animation behavior
           },
         }
@@ -55,19 +55,19 @@ export default function HomeTopics() {
 
         <div
           ref={(el) => (boxRefs.current[0] = el)}
-          className="box bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
+          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
         >
           Box 1
         </div>
         <div
           ref={(el) => (boxRefs.current[1] = el)}
-          className="box bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
+          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
         >
           Box 2
         </div>
         <div
           ref={(el) => (boxRefs.current[2] = el)}
-          className="box bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
+          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
         >
           Box 3
         </div>

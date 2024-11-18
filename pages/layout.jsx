@@ -22,15 +22,21 @@ const Layout = ({ children }) => {
       .to(node, { scale: 1, duration: 0.25 })
       .play();
 
-    return () => {
-      // Run exit animation on unmount
-      //   gsap
-      //     .timeline({ paused: true })
-      //     .to(node, { scale: 0.8, duration: 0.2 })
-      //     .to(node, { xPercent: 100, autoAlpha: 0, duration: 0.2 })
-      //     .play();
+    // Ensure page scrolls to top on route change or reload
+    const handleRouteChange = () => {
+      window.scrollTo(0, 0); // Force scroll to top
     };
-  }, [router.asPath]);
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    // Scroll to top initially on mount
+    window.scrollTo(0, 0);
+
+    // Cleanup event listener
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router]);
 
   return (
     <>

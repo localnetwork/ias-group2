@@ -56,7 +56,7 @@ export default function HomeBanner() {
           scale: 15, // End at scale 15
           scrollTrigger: {
             trigger: scaleBgRef.current,
-            markers: true,
+            // markers: true,
             start: "top bottom", // Start when the top of the element hits the bottom of the viewport
             end: "top top", // End when the top of the element reaches the top of the viewport
             scrub: true, // Smoothly animate as you scroll
