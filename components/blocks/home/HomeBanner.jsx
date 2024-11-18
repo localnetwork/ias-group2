@@ -116,9 +116,9 @@ export default function HomeBanner() {
       </div>
       <div
         ref={scaleBgRef}
-        className="scale-bg min-h-[100px] z-[1] bg-[#FFFCE1] text-black font-bold flex items-start py-[50px] justify-center w-[100px] h-[100px] rounded-full absolute bottom-[-50px] left-[50%] translate-x-[-50%]"
+        className="scale-bg z-[1] bg-[#FFFCE1] text-black font-bold block py-[50px] justify-center w-[100px] h-[100px] rounded-full absolute bottom-[-50px] left-[50%] translate-x-[-50%]"
       />
-      <div className="min-h-[100px] z-[2] text-black font-bold flex items-start py-[50px] justify-center w-[100px] h-[100px] rounded-full absolute bottom-0 left-[50%] translate-x-[-50%]">
+      <div className="z-[2] text-black font-bold flex items-start py-[50px] justify-center w-[150px] h-[100px] rounded-full absolute bottom-0 left-[50%] translate-x-[-50%]">
         Scroll down
       </div>
     </section>

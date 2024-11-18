@@ -3,6 +3,15 @@ import { useRouter } from "next/router";
 import { gsap } from "gsap";
 import Header from "@/components/partials/Header";
 
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
 const Layout = ({ children }) => {
   const containerRef = useRef(null);
   const router = useRouter();
@@ -39,12 +48,12 @@ const Layout = ({ children }) => {
   }, [router]);
 
   return (
-    <>
+    <div className={poppins.className}>
       <Header />
       <div ref={containerRef} className="page-transition">
         {children}
       </div>
-    </>
+    </div>
   );
 };
 

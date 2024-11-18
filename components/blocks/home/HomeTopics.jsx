@@ -10,7 +10,7 @@ export default function HomeTopics() {
   const boxRefs = useRef([]);
 
   useEffect(() => {
-    // Animate rocket horizontally
+    // Animate rocket with bidirectional scrolling
     gsap.fromTo(
       rocketRef.current,
       { x: "-1000%" }, // Start from the left of the viewport
@@ -20,14 +20,13 @@ export default function HomeTopics() {
           trigger: rocketRef.current,
           start: "top bottom", // Start animation when the top of the rocket enters the bottom of the viewport
           end: "top top", // End animation when the top of the rocket reaches the top of the viewport
-          scrub: true, // Smooth animation based on scroll position
-          // markers: true, // Debug markers to visualize the start and end points
-          toggleActions: "play none none none", // Controls the animation behavior
+          scrub: true, // Enable smooth animation with reverse support
+          toggleActions: "play none none none", // Allow play and reverse
         },
       }
     );
 
-    // Animate boxes with a rotate effect when they enter the viewport
+    // Animate boxes with a rotate effect and support for bidirectional scrolling
     boxRefs.current.forEach((box) => {
       gsap.fromTo(
         box,
@@ -39,9 +38,8 @@ export default function HomeTopics() {
             trigger: box,
             start: "top bottom", // Start animation when the top of the box enters the bottom of the viewport
             end: "top top", // End animation when the top of the box reaches the top of the viewport
-            scrub: true, // Smooth animation based on scroll position
-            // markers: true, // Debug markers
-            toggleActions: "play none none none", // Controls the animation behavior
+            scrub: true, // Enable smooth animation with reverse support
+            toggleActions: "play none none none", // Allow play and reverse
           },
         }
       );
