@@ -58,7 +58,7 @@ export default function HomeBoxCard() {
     initializeGSAP();
 
     return () => {
-      if (ScrollTrigger) ScrollTrigger.kill(); // Cleanup ScrollTrigger instances
+      // if (ScrollTrigger) ScrollTrigger?.kill(); // Cleanup ScrollTrigger instances
     };
   }, []);
 

@@ -47,8 +47,8 @@ export default function HomeTopics() {
   }, []);
 
   return (
-    <div className="min-h-[100vh] pt-[150px] bg-[#0E100F] py-[100px] flex items-start relative overflow-hidden">
-      <div className="container relative">
+    <div className="min-h-[100vh] pt-[200px] bg-[#0E100F] py-[100px] overflow-hidden flex flex-col items-start relative ">
+      <div className="container relative z-[2000]">
         <h2 className="font-bold text-[80px] text-white">Sample Heading</h2>
 
         <div
@@ -70,6 +70,7 @@ export default function HomeTopics() {
           Box 3
         </div>
       </div>
+
       <div ref={rocketRef} className="absolute opacity-50 top-0 rotate-[90deg]">
         <Image
           src="/images/animated-rocket.gif"
@@ -77,6 +78,32 @@ export default function HomeTopics() {
           height={200}
           alt="Animated Rocket"
         />
+      </div>
+      <div className="absolute top-[100px] left-0">
+        <div id="robot" className="opacity-20">
+          <div className="head"></div>
+          <div className="arm l">
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div className="leg l">
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div className="leg r">
+            <div>
+              <div></div>
+            </div>
+          </div>
+          <div className="arm r">
+            <div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div className="shadow opacity-30"></div>
       </div>
     </div>
   );
