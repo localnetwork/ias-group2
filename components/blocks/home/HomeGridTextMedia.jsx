@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeGridTextMedia() {
   return (
@@ -23,12 +24,12 @@ export default function HomeGridTextMedia() {
               height={500}
             />
             <div class="mt-[30px] text-left">
-              <a
+              <Link
                 class="bg-[#9A0C16] inline-block w-full text-center px-[30px] py-[15px] text-white rounded-lg"
                 href="/#"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
         </div>

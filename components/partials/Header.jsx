@@ -13,8 +13,8 @@ export default function Header() {
 
     const initializeScrollTrigger = async () => {
       // Dynamically import ScrollTrigger
-      const module = await import("gsap/ScrollTrigger");
-      ScrollTrigger = module.ScrollTrigger;
+      const st = await import("gsap/ScrollTrigger");
+      ScrollTrigger = st.ScrollTrigger;
 
       // Register ScrollTrigger plugin
       gsap.registerPlugin(ScrollTrigger);

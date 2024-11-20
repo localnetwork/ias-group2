@@ -14,8 +14,8 @@ export default function HomeBoxCard() {
 
   const initializeGSAP = async () => {
     if (!ScrollTrigger) {
-      const module = await import("gsap/ScrollTrigger");
-      ScrollTrigger = module.ScrollTrigger; // Assign ScrollTrigger to the module-level variable
+      const st = await import("gsap/ScrollTrigger");
+      ScrollTrigger = st.ScrollTrigger; // Assign ScrollTrigger to the module-level variable
       gsap.registerPlugin(ScrollTrigger);
     }
 
