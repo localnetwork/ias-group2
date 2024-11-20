@@ -12,6 +12,7 @@ export default function HomeBanner() {
   const scrollTriggerInstance = useRef(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on initial load
     const animateElements = () => {
       // Initial animations for h1 and caption
       gsap.fromTo(
@@ -53,16 +54,16 @@ export default function HomeBanner() {
           scale: 1, // Start at scale 1
         },
         {
-          scale: 15, // End at scale 15
+          scale: 8, // End at scale 15
           scrollTrigger: {
             trigger: scaleBgRef.current,
             // markers: true,
-            start: "top bottom", // Start when the top of the element hits the bottom of the viewport
+            start: "center bottom", // Start when the top of the element hits the bottom of the viewport
             end: "top top", // End when the top of the element reaches the top of the viewport
             scrub: true, // Smoothly animate as you scroll
             onUpdate: (self) => {
               // Optionally log the progress for debugging
-              console.log(self.progress);
+              // console.log(self.progress);
             },
           },
         }
@@ -70,9 +71,6 @@ export default function HomeBanner() {
       // Ensure ScrollTrigger updates
       ScrollTrigger.refresh();
     };
-
-    // Run animations initially if it's the first time
-    animateElements();
 
     // Re-run animations and reset scroll position only on initial page load
     const handleRouteChange = () => {
@@ -84,13 +82,20 @@ export default function HomeBanner() {
         }
 
         // Reset scale immediately before reanimating
-        gsap.set(scaleBgRef.current, { scale: 1 }); // Force reset scale to 1
+        gsap.set(scaleBgRef.current, { scale: 2 }); // Force reset scale to 1
 
         animateElements(); // Re-run the animations
       }
     };
 
-    router.events.on("routeChangeComplete", handleRouteChange);
+    setTimeout(() => {
+      window.scrollTo(0, 0); // Scroll to top on route change
+    }, 100);
+
+    router.events.on("routeChangeComplete", () => {
+      handleRouteChange();
+    });
+    animateElements();
 
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
@@ -116,7 +121,7 @@ export default function HomeBanner() {
       </div>
       <div
         ref={scaleBgRef}
-        className="scale-bg z-[1] bg-[#FFFCE1] text-black font-bold block py-[50px] justify-center w-[100px] h-[100px] rounded-full absolute bottom-[-50px] left-[50%] translate-x-[-50%]"
+        className="scale-bg z-[1] bg-[#FFFCE1] text-black font-bold block py-[50px] justify-center w-[200px] h-[200px] rounded-full absolute bottom-[-100px] left-[50%] translate-x-[-50%]"
       />
       <div className="z-[2] text-black font-bold flex items-start py-[50px] justify-center w-[150px] h-[100px] rounded-full absolute bottom-0 left-[50%] translate-x-[-50%]">
         Scroll down
