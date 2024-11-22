@@ -39,7 +39,7 @@ export default function OurTeamThanks() {
 
   return (
     <div className="min-h-[100vh] flex items-center bg-white py-[100px]">
-      <div className="container flex flex-col justify-center text-center text-black thanks-container">
+      <div className="container flex flex-col justify-center text-center text-[#333333] thanks-container">
         <h2 className="mb-[30px] text-[30px] thanks-heading">Special Thanks</h2>
 
         <p className="text-[80px] leading-[60px] mb-[50px] font-bold thanks-name">

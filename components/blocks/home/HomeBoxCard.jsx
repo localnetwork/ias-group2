@@ -85,7 +85,7 @@ export default function HomeBoxCard() {
     <div className="py-[100px] px-[30px] bg-[#0E100F] relative">
       <span className="bg-[#9A0C16] w-full h-[50%] absolute left-0 bottom-0" />
       <div className="container relative z-[100]">
-        <div className="bg-[#FFFCE1] flex flex-col px-[200px] min-h-[700px] rounded-[50px] py-[50px] shadow-md text-black">
+        <div className="bg-[#FFFCE1] flex flex-col px-[200px] min-h-[700px] rounded-[50px] py-[50px] shadow-md text-[#333333]">
           <p className="text-[#9A0C16] text-center font-bold">{`<?php echo("Hello World"); ?> `}</p>
           <h2 ref={textRef} className="font-bold text-[50px] mt-5 text-center">
             View our Meowmbers

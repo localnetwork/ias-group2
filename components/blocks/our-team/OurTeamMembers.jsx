@@ -125,7 +125,7 @@ export default function OurTeamMembers() {
                     {row?.map((item, index) => (
                       <div
                         key={index}
-                        className="bg-white flex gap-[15px] text-black p-[10px] shadow-md rounded-[50px]"
+                        className="bg-white flex gap-[15px] text-[#333333] p-[10px] shadow-md rounded-[50px]"
                       >
                         <Image
                           src={item?.image}

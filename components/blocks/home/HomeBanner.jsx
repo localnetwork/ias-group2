@@ -232,16 +232,16 @@ export default function HomeBanner() {
       </div>
       <div
         ref={scaleBgRef}
-        className="scale-bg z-[1] bg-[#FFFCE1] text-black font-bold block py-[50px] justify-center w-[200px] h-[200px] rounded-full absolute bottom-[-100px] left-[50%] translate-x-[-50%]"
+        className="scale-bg z-[1] bg-[#FFFCE1] text-[#333333] font-bold block py-[50px] justify-center w-[200px] h-[200px] rounded-full absolute bottom-[-100px] left-[50%] translate-x-[-50%]"
       />
-      <div className="z-[2] text-black font-bold flex flex-col items-center py-[20px] justify-center w-[150px] h-[100px] rounded-full absolute bottom-0 left-[50%] translate-x-[-50%]">
+      <div className="z-[2] text-[#333333] font-bold flex flex-col items-center py-[20px] justify-center w-[150px] h-[100px] rounded-full absolute bottom-0 left-[50%] translate-x-[-50%]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="#000"
-          className="w-[24px] mb-[15px] h-[24px] text-black block"
+          className="w-[24px] mb-[15px] h-[24px] text-[#333333] block"
         >
           <path
             strokeLinecap="round"

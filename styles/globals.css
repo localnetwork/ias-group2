@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+p:not(:last-of-type) {
+  @apply mb-[15px];
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -338,4 +342,9 @@ body {
   100% {
     transform: translateX(-50px); /* Move to the left off-screen */
   }
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 20px;
 }

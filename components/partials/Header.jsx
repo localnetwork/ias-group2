@@ -85,7 +85,7 @@ export default function Header() {
                 width={200}
                 height={200}
                 alt="Logo"
-                className="max-h-[50px] w-[50px]"
+                className="max-h-[70px] w-[70px] p-[8px] border-[2px] border-dashed border-[#ccc] rounded-full"
                 ref={logoRef} // Attach ref to logo for GSAP targeting
               />
             </Link>
