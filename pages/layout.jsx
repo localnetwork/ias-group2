@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import Header from "@/components/partials/Header";
 
 import { Poppins } from "next/font/google";
+import Footer from "@/components/partials/Footer";
 
 const poppins = Poppins({
   weight: ["400", "700"],
@@ -53,6 +54,7 @@ const Layout = ({ children }) => {
       <div ref={containerRef} className="page-transition">
         {children}
       </div>
+      <Footer />
     </div>
   );
 };

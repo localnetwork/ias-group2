@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,25 +50,35 @@ export default function HomeTopics() {
   return (
     <div className="min-h-[100vh] pt-[200px] bg-[#0E100F] py-[100px] overflow-hidden flex flex-col items-start relative ">
       <div className="container relative z-[2000]">
-        <h2 className="font-bold text-[80px] text-white">Sample Heading</h2>
+        <h2 className="font-bold text-[50px] text-white">
+          Local Organizations
+        </h2>
 
         <div
           ref={(el) => (boxRefs.current[0] = el)}
-          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
+          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
         >
-          Box 1
+          <Link
+            className="absolute top-0 left-0 opacity-0 w-full h-full"
+            href="/npc"
+          />
+          <div className="mb-[20px] rounded-sm flex justify-center shadow-md bg-white min-w-[250px] text-center">
+            <Image src="/images/npc.png" width={150} height={150} alt="NPC" />
+          </div>
+          {`National Privacy Commission (NPC)`}
         </div>
         <div
           ref={(el) => (boxRefs.current[1] = el)}
-          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
+          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
         >
-          Box 2
-        </div>
-        <div
-          ref={(el) => (boxRefs.current[2] = el)}
-          className="box font-bold text-[30px] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex justify-center items-center"
-        >
-          Box 3
+          <Link
+            className="absolute top-0 left-0 opacity-0 w-full h-full"
+            href="/pcert"
+          />
+          <div className="mb-[20px] rounded-sm flex justify-center shadow-md bg-white min-w-[250px] text-center">
+            <Image src="/images/ncert.png" width={150} height={150} alt="NPC" />
+          </div>
+          {`Philippine Computer Emergency Response Team`}
         </div>
       </div>
 

@@ -9,7 +9,6 @@ body {
   line-height: auto;
   overflow-y: scroll;
   overflow-x: hidden;
-  min-height: 3000px;
 }
 
 * {
