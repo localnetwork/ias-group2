@@ -2,8 +2,9 @@ import Head from "next/head";
 
 export default function Seo({ ...props }) {
   const { meta_title, meta_description } = props;
-  console.log("eeeee");
   const metaImgUrl = "https://ias-group2.pages.dev/images/og-image.png";
+  const metaDesc =
+    meta_description || "IAS group 2 - webpage report presentation.";
   return (
     <>
       <Head>
@@ -19,6 +20,10 @@ export default function Seo({ ...props }) {
         <meta name="og:image:width" content="1200" />
 
         <meta name="twitter:card" content="summary_large_image" />
+
+        <meta name="description" content={metaDesc} />
+
+        <meta name="twitter:description" content={metaDesc} />
       </Head>
     </>
   );
