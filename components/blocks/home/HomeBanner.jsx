@@ -192,7 +192,7 @@ export default function HomeBanner() {
     <section className="min-h-[100vh] bg-[#0E100F] overflow-hidden flex items-center relative">
       <div
         ref={containerRef}
-        className="opacity-10"
+        className="opacity-20"
         style={{
           position: "absolute",
           overflow: "hidden",

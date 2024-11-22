@@ -56,7 +56,7 @@ export default function HomeTopics() {
 
         <div
           ref={(el) => (boxRefs.current[0] = el)}
-          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
+          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 mb-[30px] rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
         >
           <Link
             className="absolute top-0 left-0 opacity-0 w-full h-full"
@@ -69,7 +69,7 @@ export default function HomeTopics() {
         </div>
         <div
           ref={(el) => (boxRefs.current[1] = el)}
-          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 m-4 rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
+          className="box relative font-bold text-[25px] hover:bg-[#712025] bg-[#9A0C16] p-8 mb-[30px] rounded-xl shadow-lg flex flex-col text-center justify-center items-center"
         >
           <Link
             className="absolute top-0 left-0 opacity-0 w-full h-full"

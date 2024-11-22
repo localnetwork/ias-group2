@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
-      <div className="bg-black flex flex-col items-center w-screen rounded-t-[64px] overflow-hidden py-[50px]">
-        <div className="px-[50px] w-full flex">
-          <div className="flex flex-col gap-[50px]">
+    <footer className="bg-white grid grid-cols-4">
+      <div className="bg-black min-h-[400px] flex flex-col items-center w-screen rounded-t-[64px] overflow-hidden py-[50px]">
+        <div className="px-[50px] w-full flex h-full">
+          <div className="flex h-full flex-col gap-[50px] justify-between">
             <Link href="/" className="">
               <Image
                 src="/images/logo.svg"

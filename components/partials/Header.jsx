@@ -4,9 +4,11 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Header() {
   const logoRef = useRef(null);
+  const router = useRouter(); // Use Next.js router
 
   useEffect(() => {
     let ScrollTrigger;
@@ -41,18 +43,30 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    // Restart logo animation on route change
+    if (logoRef.current) {
+      gsap.set(logoRef.current, { rotation: 0 }); // Reset rotation
+      gsap.to(logoRef.current, {
+        rotation: 360,
+        scrollTrigger: {
+          trigger: document.body,
+          start: "top top",
+          end: "bottom top",
+          scrub: true,
+        },
+      });
+    }
+  }, [router.pathname]); // Trigger when the route changes
+
   const menuLinks = [
     {
       name: "Home",
       url: "/",
     },
     {
-      name: "About",
-      url: "/page2",
-    },
-    {
-      name: "Services",
-      url: "/services",
+      name: "Our Team",
+      url: "/our-team",
     },
     {
       name: "Contact",
@@ -81,7 +95,11 @@ export default function Header() {
               {menuLinks.map((link) => (
                 <li key={link.name}>
                   <Link href={link.url} className="group relative">
-                    <span className="transition opacity-0 group-hover:opacity-100 absolute block top-[calc(50%-10px)] left-[calc(50%-35px)] bg-red-500 w-[70px] h-[20px] rounded-[500%] z-[-1] translate-[-50%]" />
+                    <span
+                      className={`transition ${
+                        router?.asPath == link?.url ? "!opacity-100" : ""
+                      } opacity-0 group-hover:opacity-100 absolute block top-[calc(50%-10px)] left-[calc(50%-35px)] bg-red-500 w-[70px] h-[20px] rounded-[500%] z-[-1] translate-[-50%]`}
+                    />
                     {link?.name}
                   </Link>
                 </li>
