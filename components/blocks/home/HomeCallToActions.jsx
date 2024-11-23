@@ -17,7 +17,7 @@ export default function HomeCallToActions() {
     {
       title: "ISC2",
       description:
-        "<p>No templates or stock photos. Dora AI yields results 100% tailored to you.</p>",
+        "<p>This report highlights ISC2's contributions in the cybersecurity field, including certifications, training, and its global impact on tackling the skills gap.</p>",
       icon: "/images/cta2.webp",
       link: "/isc2",
     },
