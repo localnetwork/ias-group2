@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 export default function HomeCallToActions() {
   const containerRef = useRef(null);
@@ -9,7 +10,7 @@ export default function HomeCallToActions() {
     {
       title: "ISACA",
       description:
-        "<p>Build your site in any style or brand identity — just prompt it!</p>",
+        "<p>Empowering IT Professionals Worldwide: ISACA's Role in Advancing IT Governance, Cybersecurity, and Risk Management Through Education and Certification</p>",
       icon: "/images/cta1.webp",
       link: "/isaca",
     },
@@ -23,7 +24,7 @@ export default function HomeCallToActions() {
     {
       title: "SANS Institute",
       description:
-        "<p>Seamlessly coordinate images, text, and UI elements to maximize usability.</p>",
+        "<p>The leading provider of cybersecurity training, certifications, and research, focused on developing the next generation of professionals.</p>",
       icon: "/images/cta3.webp",
       link: "/sans",
     },
@@ -76,9 +77,13 @@ export default function HomeCallToActions() {
         >
           {sampleArr.map((item, index) => (
             <div
-              className="cta-item relative px-[30px] flex justify-center items-center flex-col"
+              className="hover:!opacity-50 transition cta-item relative px-[30px] flex justify-center items-center flex-col"
               key={index}
             >
+              <Link
+                href={item?.link}
+                className="absolute top-0 left-0 w-full h-full block"
+              />
               <Image src={item?.icon} width={100} height={100} alt="Icon" />
               <h2 className="font-bold">{item?.title}</h2>
               <div
