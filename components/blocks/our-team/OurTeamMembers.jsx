@@ -64,23 +64,28 @@ export default function OurTeamMembers() {
       location: "Cordova",
     },
     {
-      name: "Adrian Quiroy",
-      image: "/images/adrian.jpg",
+      name: "Ja Nino Cerna Alegarbes",
+      image: "/images/nino.jpg",
       location: "Lapu-lapu City",
     },
     {
-      name: "Adrian Quiroy",
-      image: "/images/adrian.jpg",
+      name: "Jane Ybañez",
+      image: "/images/jane.jpg",
       location: "Cordova",
     },
     {
-      name: "Adrian Quiroy",
-      image: "/images/adrian.jpg",
+      name: "Jovel Gasataya",
+      image: "/images/jovel.jpg",
       location: "Cordova",
     },
     {
-      name: "Adrian Quiroy",
-      image: "/images/adrian.jpg",
+      name: "Mar Vin",
+      image: "/images/marvin.jpg",
+      location: "Cordova",
+    },
+    {
+      name: "Quillan John Paul",
+      image: "/images/paul.jpg",
       location: "Cordova",
     },
   ];
