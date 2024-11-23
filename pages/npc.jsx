@@ -7,227 +7,134 @@ export default function Npc() {
     {
       title: "Introduction",
       description: `
-        <p>To set the context for the discussion on data privacy, emphasizing the importance of protecting personal information in the digital era and the critical role of the National Privacy Commission (NPC).</p>
+        <p><strong>Objective:</strong> To introduce the National Privacy Commission (NPC) as the primary government agency responsible for enforcing data privacy laws in the Philippines.</p>
         <br />
         <p>
-            <strong>Key Points:</strong>            
+          <strong>Key Points:</strong>            
         </p>
         <p>
         <ul>
-            <li>
-                The rise of digital transformation has led to the proliferation of data, making privacy a global concern.
-            </li>
-            <li>
-                In the Philippines, personal information is often at risk due to data breaches, phishing scams, and misuse of information.
-            </li>
-            <li>
-                The NPC was established under the Data Privacy Act of 2012 to protect the rights of individuals and ensure organizations responsibly handle personal data.
-            </li>
-            <li>
-                Importance of public awareness and organizational accountability in building a privacy-resilient society.
-            </li>
+          <li>
+            The NPC was established through the Data Privacy Act of 2012 (RA 10173) to protect personal information and ensure compliance with data privacy standards.
+          </li>
+          <li>
+            It aims to cultivate a culture of privacy in both public and private organizations across the country.
+          </li>
+          <li>
+            The NPC is responsible for monitoring and implementing data privacy regulations and addressing privacy-related concerns.
+          </li>
         </ul>
         </p>    
-        `,
+      `,
     },
     {
-      title: "The Data Privacy Act of 2012",
+      title: "Data Privacy Act of 2012",
       description: `
-        <p>To provide a detailed understanding of the law that governs data privacy in the Philippines.</p>
+        <p><strong>Objective:</strong> To provide an overview of the Data Privacy Act of 2012 (Republic Act 10173) and its significance in safeguarding personal data.</p>
         <br />
         <p>
-            <strong>Key Points:</strong>            
+          <strong>Key Points:</strong>            
         </p>
         <p>
         <ul>
-            <li>
-                <strong>Overview of the Law:</strong> Enacted as Republic Act No. 10173, it aims to protect personal information collected, processed, and stored by both public and private sectors.
-            </li>
-            <li>
-                <strong>Principles of Data Privacy:</strong>
-                <ul>
-                  <li><strong>Transparency:</strong> Organizations must inform individuals about how their data is used.</li>
-                  <li><strong>Legitimate Purpose:</strong> Data should only be collected for a lawful and specific purpose.</li>
-                  <li><strong>Proportionality:</strong> Data collected must be relevant and not excessive for its intended use.</li>
-                </ul>
-            </li>
-            <li>
-              <strong>Rights of Data Subjects:</strong>
-              <ul>
-                <li>
-                  Right to be informed
-                </li>
-                <li>
-                  Right to access
-                </li>
-                <li>
-                  Right to object to processing
-                </li>
-                <li>
-                  Right to data portability
-                </li>
-                <li>
-                  Right to file a complaint
-                </li>
-              </ul>
-            </li>
-            <li>
-              <strong>Obligations of Organizations:</strong>
-              <ul>
-                <li>Secure consent before collecting data</li>
-                <li>Appoint a Data Protection Officer (DPO)</li>
-                <li>Implement security measures to prevent breaches</li>
-              </ul> 
-            </li> 
+          <li>
+            <strong>Purpose:</strong> To protect the privacy of individuals while ensuring the free flow of information for innovation and growth.
+          </li>
+          <li>
+            <strong>Scope:</strong> Covers all entities that process personal information, including public and private organizations.
+          </li>
+          <li>
+            <strong>Key Provisions:</strong>
+            <ul>
+              <li>Rights of Data Subjects (e.g., right to access, correct, and erase personal data).</li>
+              <li>Obligations of Personal Information Controllers (PICs) and Personal Information Processors (PIPs).</li>
+              <li>Mandatory notification of data breaches within 72 hours.</li>
+            </ul>
+          </li>
         </ul>
-        </p>  
-        `,
+        </p>    
+      `,
+    },
+    {
+      title: "NPC's Core Functions",
+      description: `
+        <p><strong>Objective:</strong> To explain the key responsibilities and activities of the National Privacy Commission in upholding data privacy laws.</p>
+        <br />
+        <p>
+          <strong>Core Functions:</strong>            
+        </p>
+        <p>
+        <ul>
+          <li>
+            <strong>Policy Formulation:</strong> Developing rules, regulations, and policies for the implementation of the Data Privacy Act.
+          </li>
+          <li>
+            <strong>Compliance Monitoring:</strong> Ensuring that organizations comply with data privacy requirements through audits and investigations.
+          </li>
+          <li>
+            <strong>Education and Advocacy:</strong> Conducting awareness campaigns, workshops, and training to promote data privacy.
+          </li>
+          <li>
+            <strong>Enforcement:</strong> Investigating complaints, resolving disputes, and imposing penalties for non-compliance.
+          </li>
+        </ul>
+        </p>    
+      `,
     },
     {
       title: "Challenges in Data Privacy",
       description: `
-        <p>To discuss the challenges organizations and individuals face in ensuring data privacy.</p>
+        <p><strong>Objective:</strong> To highlight the common challenges faced by organizations and individuals in ensuring data privacy in the digital age.</p>
         <br />
         <p>
-            <strong>Key Points:</strong>            
+          <strong>Key Challenges:</strong>            
         </p>
         <p>
         <ul>
-            <li>
-                <strong>Increasing Cyber Threats:</strong> Rise in cyber-attacks, data breaches, and ransomware incidents targeting personal information.
-            </li>
-            <li>
-                <strong>Emerging Technologies:</strong> Adoption of AI, IoT, and cloud computing raises privacy risks due to the vast amount of data generated.
-            </li>
-            <li>
-                <strong>Sector-Specific Concerns:</strong>
-                <ul>
-                  <li>
-                    <strong>E-commerce:</strong> Handling payment and personal details securely.
-                  </li>
-                  <li>
-                    <strong>Fintech:</strong> Balancing innovation with regulatory compliance.
-                  </li>
-                  <li>
-                    <strong>Social Media:</strong> Addressing misuse and unauthorized access to user data.
-                  </li>
-                </ul>
-            </li>
+          <li>
+            <strong>Rapid Technological Advancement:</strong> The fast pace of innovation often outpaces the development of privacy regulations.
+          </li>
+          <li>
+            <strong>Cybersecurity Threats:</strong> Increasing frequency and sophistication of cyberattacks targeting personal data.
+          </li>
+          <li>
+            <strong>Lack of Awareness:</strong> Limited understanding among individuals and organizations about their rights and responsibilities under the Data Privacy Act.
+          </li>
+          <li>
+            <strong>Compliance Costs:</strong> Small and medium-sized enterprises may find it challenging to allocate resources for data privacy compliance.
+          </li>
         </ul>
         </p>    
-        `,
-    },
-    {
-      title: "NPC’s Initiatives and Programs",
-      description: `
-        <p>To highlight how the NPC promotes and enforces data privacy in the Philippines.</p>
-        <br />
-        <p>
-            <strong>Key Points:</strong>            
-        </p>
-        <p>
-        <ul>
-            <li>
-                <strong>Awareness Campaigns:</strong> Outreach programs targeting businesses, schools, and local government units to spread awareness about data privacy.
-            </li>
-            <li>
-              <strong>Compliance Assistance:</strong> Guidelines for organizations on how to comply with the Data Privacy Act, such as the NPC’s Privacy Toolkit.
-            </li>
-            <li>
-              <strong>Capacity Building:</strong> Training and certification programs for DPOs and privacy practitioners.
-            </li>
-            <li>
-              <strong>Enforcement Actions:</strong> Case studies on breaches and violations investigated by NPC, showcasing accountability.
-            </li>
-            <li>
-              <strong>International Collaboration:</strong> Partnerships with global organizations to align with international privacy standards and practices.
-            </li>
-        </ul>
-        </p>    
-        `,
-    },
-    {
-      title: "Strengthening Privacy Compliance",
-      description: `
-        <p>To provide actionable strategies for organizations to achieve and maintain compliance.</p>
-        <br />
-        <p>
-            <strong>Key Points:</strong>            
-        </p>
-        <p>
-        <ul>
-            <li>
-               <strong>Appointing a Data Protection Officer (DPO):</strong> Ensures oversight of privacy policies and implementation of security measures.
-            </li>
-            <li>
-               <strong>Data Mapping:</strong> Understanding how personal data flows within the organization to identify risks.
-            </li>
-            <li>
-               <strong>Risk Assessments:</strong> Conducting regular Privacy Impact Assessments (PIA) to mitigate vulnerabilities.
-            </li>
-            <li>
-               <strong>Training Employees:</strong> Building a culture of privacy awareness among staff.
-            </li>
-            <li>
-               <strong>Incident Response Plans:</strong> Preparing for and effectively responding to data breaches.
-            </li>
-        </ul>
-        </p>    
-        `,
+      `,
     },
     {
       title: "Future Directions",
       description: `
-        <p>To explore the NPC’s vision for addressing emerging privacy challenges and enhancing its regulatory framework.</p>
+        <p><strong>Objective:</strong> To explore the National Privacy Commission’s vision for the future of data privacy in the Philippines.</p>
         <br />
         <p>
-            <strong>Key Points:</strong>            
+          <strong>Key Areas of Focus:</strong>            
         </p>
         <p>
         <ul>
-            <li>
-               <strong>Adapting Policies for Emerging Technologies:</strong> AI and big data require updated guidelines to balance innovation with privacy.
-            </li>
-            <li>
-               <strong>Strengthening Cross-Sector Collaboration:</strong> Partnering with industries, government, and academia to foster privacy resilience.
-            </li>
-            <li>
-               <strong>Expanding Public Awareness:</strong> Scaling outreach to educate individuals about their privacy rights and responsibilities.
-            </li>
-            <li>
-               <strong>Improving Breach Reporting Mechanisms:</strong> Streamlining processes for faster resolution of privacy-related incidents.
-            </li>
+          <li>
+            Enhancing collaboration with international data protection agencies to address cross-border data privacy concerns.
+          </li>
+          <li>
+            Strengthening cybersecurity measures to protect personal information from emerging threats.
+          </li>
+          <li>
+            Encouraging innovation while ensuring data privacy by promoting privacy-by-design principles.
+          </li>
+          <li>
+            Expanding education and outreach programs to improve public awareness of data privacy rights and responsibilities.
+          </li>
         </ul>
         </p>    
-        `,
-    },
-    {
-      title: "Conclusion",
-      description: `
-        <p>To summarize the presentation and inspire the audience to take active steps in protecting data privacy.</p>
-        <br />
-        <p>
-            <strong>Key Points:</strong>            
-        </p>
-        <p>
-        <ul>
-            <li>
-              Emphasize the shared responsibility of the government, organizations, and individuals in ensuring data privacy.
-            </li>
-            <li>
-              Encourage organizations to adopt privacy-by-design principles in their operations.
-            </li>
-            <li>
-              Call on individuals to stay informed about their rights and report any violations to the NPC.
-            </li>
-            <li>
-              Reinforce the NPC’s role as a trusted partner in safeguarding personal data.
-            </li>
-        </ul>
-        </p>    
-        `,
+      `,
     },
   ];
+
   return (
     <>
       <GlobalBanner

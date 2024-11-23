@@ -11,18 +11,21 @@ export default function HomeCallToActions() {
       description:
         "<p>Build your site in any style or brand identity — just prompt it!</p>",
       icon: "/images/cta1.webp",
+      link: "/isaca",
     },
     {
       title: "ISC2",
       description:
         "<p>No templates or stock photos. Dora AI yields results 100% tailored to you.</p>",
       icon: "/images/cta2.webp",
+      link: "/isc2",
     },
     {
       title: "SANS Institute",
       description:
         "<p>Seamlessly coordinate images, text, and UI elements to maximize usability.</p>",
       icon: "/images/cta3.webp",
+      link: "/sans",
     },
   ];
 
